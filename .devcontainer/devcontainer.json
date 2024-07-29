@@ -1,0 +1,9 @@
+{
+    "name": "My Codespace",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "forwardPorts": [5432],
+    "postCreateCommand": "sudo -u postgres createuser --superuser $USER && sudo -u postgres createdb $USER"
+}
+

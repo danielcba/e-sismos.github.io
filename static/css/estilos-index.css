@@ -1,0 +1,79 @@
+* {
+    background-color: #0b121f;
+    color: #dddee0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 18px;
+}
+.provincia {
+    text-align: center;
+}
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0px 80px 0px 80px;
+}
+.encabezado h1{
+    font-size: 48px;
+    
+}
+.encabezado h1:hover {
+    color: oklch(61.18% 0.215 16.94);
+    outline: 0.5px solid #38f50c;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.ultimo-sismo {
+    display: flex;
+    justify-content:left;    
+    margin: 0px 0px 0px 100px;
+}
+.ultimo-sismo ul {
+    margin: 18px 0px 0px 0px;
+}
+.mapa-ultimo{
+    padding: 0px 0px 0px 30px;
+}
+/*----------------------------------------*/
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    padding: 0px 60px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #dddee0;
+    /*font-size: 18px;*/
+    
+}
+
+.nav-list li a:hover {
+    color: oklch(61.18% 0.215 16.94);
+    /* Change the color on hover */
+}
+
+.rightNav {
+    text-align:left;
+    /*font-size: 18px;*/
+}
+.rightNav a:hover {
+    color: oklch(61.18% 0.215 16.94);
+    /* Change the color on hover */
+}

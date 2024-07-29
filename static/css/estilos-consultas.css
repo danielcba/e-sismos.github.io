@@ -1,0 +1,50 @@
+* {
+    background-color: #0b121f;
+    color: #dddee0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 18px;
+}
+/*----------------------------------------*/
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    padding: 0px 60px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #dddee0;
+    /*font-size: 18px;*/
+
+}
+
+.nav-list li a:hover {
+    color: oklch(61.18% 0.215 16.94);
+    /* Change the color on hover */
+}
+
+.rightNav {
+    text-align: left;
+    /*font-size: 18px;*/
+}
+
+.rightNav a:hover {
+    color: oklch(61.18% 0.215 16.94);
+    /* Change the color on hover */
+}

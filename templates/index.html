@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Córdoba en Movimiento</title>
+    <link rel="icon" href="static/images/mapa-cordoba.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/estilos-index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/consultas">Consultas de sismos</a></li>
+                <li><a href="#services">A cerca de nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="rightNav">
+                <a href="/consultas">Realizar consultas</a>
+            </div>
+        </nav>
+        <div class="provincia">
+            <img src="static/images/mapa-cordoba.png" alt="" width="12%">
+        </div>        
+        <div class="encabezado">
+            <img src="static/images/bandera-cordoba.jpg" alt="" width="150" height="90">
+            <h1>Sismos en Córdoba</h1>
+            <img src="static/images/earthquake.png" alt="" width="150" height="90">
+        </div>
+    </header>
+    <div id="resultados">
+        <div class="ultimo-sismo">
+            <p>Ubicación del último sismo:</p>
+            {% if sismos %}
+            <ul>
+                {% for sismo in sismos %}
+                <li>Fecha: {{ sismo[0] }}, Hora: {{ sismo[1] }}, Latitud: {{ sismo[2] }}, Longitud: {{ sismo[3] }},
+                    Profundidad: {{ sismo[4] }}, Magnitud: {{ sismo[5] }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="mapa-ultimo">
+            <p>Mapa del último sismo:</p>
+            <iframe src="static/mapa.html" width="400" height="350"></iframe>
+            {% else %}
+            <p>No se encontraron sismos.</p>
+            {% endif %}
+        </div>
+    </div><br>
+    <a href="/consultas">Realizar consultas</a>
+</body>
+
+</html>
